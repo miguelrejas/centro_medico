@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #006699;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 40px;
+}
+
+/* Quiénes somos: cajas grandes, fijas */
+.quienes-box {
+  width: 1000px;
+  background: #eeeeee;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Profesionales en fila, sin adaptación */
+.profesionales-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.profesional {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  flex-shrink: 0; /* no se achican */
+}
+
+/* Servicios: también en fila, no adaptativos */
+#servicios {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.servicio {
+  width: 200px;
+  height: 100px;
+  background-color: #dddddd;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Contacto */
+form {
+  margin-top: 20px;
+  width: 500px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
